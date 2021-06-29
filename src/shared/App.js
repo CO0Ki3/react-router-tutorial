@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import { Home, About, Posts, Users } from "../pages/index";
+import { Home, About, Posts, User, Users } from "../pages/index";
 import Menu from '../components/Menu';
 
 // function App() {
@@ -27,7 +27,9 @@ function App() {
         <Route path="/about/:name" component={ About }/>
       </Switch>
       <Route path="/posts" component={ Posts }/>
-      <Route exact path="/users/:userid" component={ Users } />
+      <Route exact path="/user/:userid" component={ User } />
+      <Route path="/users" exact component={ Users } />
+      <Route path="/users/:userid" component={ User }/>
     </div>
   );
 }
