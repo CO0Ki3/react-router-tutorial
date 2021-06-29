@@ -1,7 +1,7 @@
 import React from "react";
 
 const Post = ({ match }) => {
-  console.log("Post: ", {match});
+  console.log("Post: ", { match });
   return <div>포스트 {match.params.id}</div>;
 };
 
